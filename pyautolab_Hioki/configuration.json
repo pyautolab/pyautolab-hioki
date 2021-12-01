@@ -1,0 +1,31 @@
+{
+    "name": "Hioki",
+    "configuration": {
+        "im3536.connectingSpeed": {
+            "description": "Setting serial connecting speed.",
+            "type": "string",
+            "default": "FAST",
+            "enum": [
+                "FAST",
+                "MEDIUM",
+                "SLOW",
+                "SLOW2"
+            ]
+        }
+    },
+    "device": {
+        "IM3536(LCR meter)": {
+            "class": "pyautolab.plugins.pyautolab_Hioki.driver:IM3536",
+            "tabClass": "pyautolab.plugins.pyautolab_Hioki.tab:TabIM3536",
+            "baudrate": {
+                "default": 9600,
+                "enum": [
+                    9600,
+                    19200,
+                    38400,
+                    57600
+                ]
+            }
+        }
+    }
+}
