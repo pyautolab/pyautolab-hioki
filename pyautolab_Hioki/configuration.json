@@ -15,8 +15,8 @@
     },
     "device": {
         "IM3536(LCR meter)": {
-            "class": "pyautolab.plugins.pyautolab_Hioki.driver:IM3536",
-            "tabClass": "pyautolab.plugins.pyautolab_Hioki.tab:TabIM3536",
+            "class": "pyautolab_Hioki.driver:IM3536",
+            "tabClass": "pyautolab_Hioki.tab:TabIM3536",
             "baudrate": {
                 "default": 9600,
                 "enum": [
