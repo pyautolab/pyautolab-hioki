@@ -117,7 +117,7 @@ class IM3536(api.Device):
             results[parameter] = _UNITS[parameter]
         if self._is_monitor:
             results.update(_MONITOR_INFO)
-        results.pop("OFF")
+        results.pop("OFF", None)
         self._cache_parameters = [parameter for parameter, _ in results.items()]
         return results
 
