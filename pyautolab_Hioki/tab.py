@@ -1,16 +1,16 @@
 from __future__ import annotations
 
+from pyautolab import api
+from qtpy.QtWidgets import QCheckBox, QFormLayout, QGroupBox, QWidget
+
 from pyautolab_Hioki.driver import IM3536, PARAMETERS
 from pyautolab_Hioki.widget import IM3536ParameterCombobox
-from PySide6.QtWidgets import QCheckBox, QFormLayout, QGroupBox, QWidget
-
-from pyautolab import api
 
 
 class TabIM3536(api.DeviceTab):
     def __init__(self, device: IM3536) -> None:
         super().__init__()
-        self.device = device
+        self.device: IM3536 = device
         self._ui = _TabUI()
         self._ui.setup_ui(self)
 

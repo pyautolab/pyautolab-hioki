@@ -1,6 +1,6 @@
-from pyautolab_Hioki.driver import PARAMETERS
-
 from pyautolab import api
+
+from pyautolab_Hioki.driver import PARAMETERS
 
 
 class IM3536ParameterCombobox(api.widgets.FlexiblePopupCombobox):
