@@ -22,6 +22,7 @@
     "python.formatting.provider": "black",
     "cSpell.words": [
         "absolufy",
+        "APPDATA",
         "backticks",
         "datas",
         "Hioki",
@@ -34,6 +35,8 @@
         "pytest",
         "pyupgrade",
         "qtpy",
+        "venv",
+        "virtualenvs",
         "yesqa"
     ]
 }
