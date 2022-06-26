@@ -9,7 +9,7 @@ from pyautolab_Hioki.widget import IM3536ParameterCombobox
 
 class TabIM3536(api.DeviceTab):
     def __init__(self, device: IM3536) -> None:
-        super().__init__()
+        super().__init__(device)
         self.device: IM3536 = device
         self._ui = _TabUI()
         self._ui.setup_ui(self)
