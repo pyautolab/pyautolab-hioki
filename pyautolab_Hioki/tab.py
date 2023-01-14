@@ -69,11 +69,11 @@ class _TabUI:
         f_layout_parameter.addRow("2", self.combobox_parameter2)
         f_layout_parameter.addRow("3", self.combobox_parameter3)
         f_layout_parameter.addRow("4", self.combobox_parameter4)
-        f_layout_parameter.addRow("Measurement Frequency", api.qt_helpers.add_unit(self.slider_frequency, "Hz"))
+        f_layout_parameter.addRow("Measurement Frequency", api.qt.add_unit(self.slider_frequency, "Hz"))
 
         group_option = QGroupBox("Option")
         f_layout_option = QFormLayout(group_option)
         f_layout_option.addRow(self.checkbox_acquire_monitor_data)
         f_layout_option.addRow(self.checkbox_monitor_on)
 
-        api.qt_helpers.create_layout(f_layout_parameter, group_option, parent=parent)
+        api.qt.layout(f_layout_parameter, group_option, parent=parent)
