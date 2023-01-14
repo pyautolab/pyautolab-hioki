@@ -17,12 +17,12 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.12"
+python = ">=3.10,<3.12"
 
 [tool.poetry.dev-dependencies]
 # Flake8
@@ -49,9 +49,6 @@ pre-commit = "^2.15.0"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.plugins."pyinstaller40"]
-hook-dirs = "pyautolab_Hioki.__pyinstaller:get_hook_dirs"
-
 [tool.flake8]
 max-line-length = 119
 max-complexity = 10
@@ -64,8 +61,3 @@ line-length = 119
 [tool.isort]
 profile = "black"
 line_length = 119
-
-[tool.coverage.report]
-exclude_lines = [
-    "if __name__ == .__main__.:",
-]

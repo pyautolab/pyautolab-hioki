@@ -76,4 +76,4 @@ class _TabUI:
         f_layout_option.addRow(self.checkbox_acquire_monitor_data)
         f_layout_option.addRow(self.checkbox_monitor_on)
 
-        api.qt_helpers.create_v_box_layout([f_layout_parameter, group_option], parent)
+        api.qt_helpers.create_v_layout([f_layout_parameter, group_option], parent)
