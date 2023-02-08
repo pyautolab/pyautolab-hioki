@@ -26,27 +26,8 @@ dev = [
     "black",
     "isort",
     "pyinstaller",
-    # flake8
     "flake8",
-    "flake8-return",
-    "flake8-pie",
-    "flake8-print",
-    "flake8-docstrings",
-    "flake8-bugbear",
-    "flake8-simplify",
-    "flake8-comprehensions",
-    "flake8-eradicate",
-    "flake8-rst-docstrings",
-    "flake8-pyproject",
-    "flake8-pytest-style",
-    "pep8-naming",
 ]
-
-[project.gui-scripts]
-pyautolab = "pyautolab.__main__:main"
-
-[project.entry-points."pyinstaller40"]
-hook-dirs = "pyautolab.__pyinstaller:get_hook_dirs"
 
 [tool.flake8]
 max-line-length = 119

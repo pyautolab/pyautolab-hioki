@@ -1,6 +1,7 @@
+from typing import Literal
+
 import pyautolab.api as api
 from serial import Serial
-from typing_extensions import Literal
 
 _DISPLAY = {True: ":DISP ON", False: ":DISP OFF"}
 _MEASURE_OUTPUT_AUTO = {True: ":MEAS:OUTP:AUTO ON", False: "MEAS:OUTP:AUTO OFF"}
