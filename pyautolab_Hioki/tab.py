@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from pyautolab import api
 from qtpy.QtWidgets import QCheckBox, QFormLayout, QGroupBox, QWidget
 

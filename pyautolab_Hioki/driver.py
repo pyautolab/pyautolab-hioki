@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import pyautolab.api as api
 from serial import Serial
 from typing_extensions import Literal
